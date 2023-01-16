@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            width: 450px;
+            height: 450px;
+            background-color: orange;
+        }
+        
+        #table1 {
+            text-align: center;
+            background-color: orange;
+            border-collapse: collapse;
+        }
+        .den {
+            background-color: black;
+            width: 50px;
+            height: 50px;
+        }
+        .trang {
+            background-color: white;
+            width: 50px;
+            height: 50px;
+        }
+
+        #table2 .chudo{
+            color: red;
+        }
+
+        #table2 .chuxanh{
+            color: blue;
+        }
+
+        #table2 .do{
+           background-color: red;
+        }
+
+        #table2 .vang{
+           background-color: yellow;
+        }
+
+        #table2 .xanh{
+           background-color: blue;
+        }
+
+        #table2 .do, .vang ,.xanh{
+           color: white ;
+        }
+
+        #table3 .chudo{
+            color: red;
+        }
+
+        #table3 .chuxanh{
+            color: blue;
+        }
+
+        #table3 {
+            border-collapse: collapse;
+        }
+
+        table {
+            text-align: center;
+        }
+
+        sub{
+            color: black;
+        }
+
+        td{
+            width: 66px;
+            height: 30px;
+            margin: none;
+        }
+
+        #table2 .caption {
+            color: blue;
+            width: 462px;
+            height: 50px;
+            text-align: center;
+            margin: auto;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <table id="table1">
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+            </tr>  
+            <tr>
+                <td>E</td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+            </tr>  
+            <tr>
+                <td>G</td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+                <td class="den"></td>
+                <td class = trang></td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+                <td class="trang"></td>
+                <td class ="den"></td>
+            </tr>          
+        </table>
+    </div>
+    <hr>
+    <table id="table2">
+        <caption class="caption"> <b>Tháng 10 - October</b></caption>
+        <tr>
+            <td class="do">C.Nhật</td>
+            <td class="vang">T.Hai</td>
+            <td class="vang" >T.Ba</td>
+            <td class="vang">T.Tư</td>
+            <td class="vang">T.Năm</td>
+            <td class="vang">T.Sáu</td>
+            <td class="xanh">T.Bảy</td>
+        </tr>
+        <tr>
+            <td class="chudo">Sun</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+            <td class="chuxanh">Sat</td>
+        </tr>
+    </table>
+        <table id="table3" border="2px ">
+            </tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><p>1<sub>13</sub></p></td>
+                <td><p>2<sub>14</sub></p></td>
+                <td><p>3<sub>15</sub></p></td>  
+            </tr>
+            <tr>
+                <td><p class="chudo">4<sub>16</sub></p></td>
+                <td><p>5<sub>17</sub></p></td>
+                <td><p>6<sub>18</sub></p></td>
+                <td><p>7<sub>19</sub></p></td>
+                <td><p>8<sub>20</sub></p></td>
+                <td><p>9<sub>21</sub></p></td>
+                <td><p class="chuxanh">10<sub>22</sub></p></td>
+            </tr>
+            <tr>
+                <td><p class="chudo">11<sub>23</sub></p></td>
+                <td><p>12<sub>24</sub></p></td>
+                <td><p>13<sub>25</sub></p></td>
+                <td><p>14<sub>26</sub></p></td>
+                <td><p>15<sub>27</sub></p></td>
+                <td><p>16<sub>28</sub></p></td>
+                <td><p class="chuxanh">17<sub>29</sub></p></td>
+            </tr>
+            <tr>
+                <td><p class="chudo">18<sub>1.9</sub></p></td>
+                <td><p>19<sub>2</sub></p></td>
+                <td><p>20<sub>3</sub></p></td>
+                <td><p>21<sub>4</sub></p></td>
+                <td><p>22<sub>5</sub></p></td>
+                <td><p>23<sub>6</sub></p></td>
+                <td><p class="chuxanh">24<sub>7</sub></p></td>
+            </tr>
+            <tr>
+                <td><p class="chudo">25<sub>8</sub></p></td>
+                <td><p>26<sub>9</sub></p></td>
+                <td><p>27<sub>10</sub></p></td>
+                <td><p>28<sub>11</sub></p></td>
+                <td><p>29<sub>12</sub></p></td>
+                <td><p>30<sub>13</sub></p></td>
+                <td><p class="chuxanh">31<sub>14</sub></p></td>
+            </tr>
+        </table>
+    </table>
+</body>
+</html>

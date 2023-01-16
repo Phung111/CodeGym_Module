@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Meter</td>
+                    <td><input type="number" id="meterIn" placeholder="Enter meter" value="10"></td>
+                    <td><button onclick="convertMeter()">Convert to feet</button></td>
+                    <td><textarea id="resultFeet" cols="5" rows="1"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Feet</td>
+                    <td><input type="number" id="meterIn" placeholder="Enter feet" value="10"></td>
+                    <td><button onclick="convertFeet()">Convert to meter</button></td>
+                    <td><textarea id="resultMeter" cols="5" rows="1"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+
+    <script>
+        function convertMeter(){
+            let meterIn = Number(document.getElementById("meterIn").value);
+            let feet = 3.279*meterIn;
+            document.getElementById("resultFeet").value = feet
+        }
+
+        function convertFeet(){
+            let feetIn = Number(document.getElementById("meterIn").value);
+            let meter = 0.305*feetIn;
+            document.getElementById("resultMeter").value = meter
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><input type="button" value = "Bài 1" onclick="bai1()"> Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    <br><input type="button" value = "Bài 2" onclick="bai2()"> Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    <br><input type="button" value = "Bài 3" onclick="bai3()"> Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    <br><input type="button" value = "Bài 4" onclick="bai4()"> Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+    <br><input type="button" value = "Bài 5" onclick="bai5()"> Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    <br><input type="button" value = "Bài 6" onclick="bai6()"> Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.
+    <br><input type="button" value = "Bài 7" onclick="bai7()"> Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    <br><input type="button" value = "Bài 8" onclick="bai8()"> Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    <br><input type="button" value = "Bài 9" onclick="bai9()"> Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. 
+</body>
+<script>
+    function bai1() {
+        let number = +prompt("Enter a number to square")
+        let number_square = number*number;
+        alert(number_square);
+    }
+
+    function bai2() {
+        let radius      = +prompt("Enter radius");
+        let perimeter   = Math.round(2*Math.PI*radius);
+        let area        = Math.round(Math.PI*radius*radius);
+        alert(`area: ${area} , perimeter ${perimeter}`);
+    }
+    
+    function bai3() {
+        let number = +prompt("Enter a number to factorial calculation")
+        let sum = 1;
+        for (i = 1 ; i <= number ; i++) {
+            sum *= i;          
+        }
+        alert(`${number}! = ${sum}`);
+    }
+    
+    function bai4() {
+        let enterIn = prompt("Enter a characters to check if number")
+        if (enterIn > 0 || enterIn < 0 || enterIn == 0) {
+            alert("true");
+        } else {
+            alert("false");
+        }
+    }
+
+    function bai5() {
+        let a = +prompt("Enter first number");
+        let b = +prompt("Enter second number");
+        let c = +prompt("Enter third number");
+        let min;
+        a<b && a<c ? min=a : b<c ? min=b : min=c;
+        alert(`Smallest number: ${min}`)
+    }
+
+    function bai6() {
+        let number = +prompt("Enter a number to check positive integers")
+        number > 0 ? alert("true") : number = 0 ? alert("true") : alert("Not even true or false")
+    }
+    
+    function bai7() {
+        let a = +prompt("Enter first number");
+        let b = +prompt("Enter second number");
+        let swap;
+        swap = a;
+        a = b;
+        b = swap;
+        alert(`First number: ${a}`);
+        alert(`Second number: ${b}`);
+    }
+    
+    function bai8() {
+        let array_main = [1, 2, 3, 4, 5, ,6 ,7 ,8];
+        alert(`aray_main = [ ${array_main} ]`);
+        let array_reverse = array_main.reverse();
+        alert(`aray_reverse = [ ${array_reverse} ]`);
+        
+    }
+    
+    function bai9() {
+        debugger;
+        // let array_main = ['a', 'b', 'c', 'a', 'a', 'a', 'b', 'c', 'b', 'a'];
+        let position = []
+        let textin = prompt("Enter character ")
+        for (i = 0 ; i < array_main.length ; i++) {
+            if (textin == array_main[i]) {
+                position.push(i);
+            }
+        }
+        let array_main = [a, b, c];
+        if (position.length == 0) {
+            alert("-1")
+        } else {
+            alert(`position = [ ${position} ]`);
+            alert(`aray_main = [ ${array_main} ]`);
+        }
+    }
+</script>
+</html>

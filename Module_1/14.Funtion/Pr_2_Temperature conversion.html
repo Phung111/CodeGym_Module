@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        
+        <table>
+            <tbody>
+                <tr>
+                    <td>Fahrenheit</td>
+                    <td><input type="number"  id="oF" value="32"
+                        oninput ="resultCelcius(this.value)"
+                        ></td>
+                </tr>
+                <tr>
+                    <td>Celcius</td>
+                    <td><p><span type="number" id="outputCelsius"></span></p></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    
+    <script>
+        function resultCelcius() {
+            let F = Number(document.getElementById("oF").value);
+            let C =  (F - 32)/1.8;
+            document.getElementById("outputCelsius").innerHTML = C;
+        }
+    </script>
+</body>
+</html>

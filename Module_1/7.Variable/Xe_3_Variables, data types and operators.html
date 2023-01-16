@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 1px 20px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        div {
+            width: 500px;
+            height: 20px;
+            border: 2px;
+            border-style: solid;
+        }
+        
+    </style>
+</head>
+<body>
+    <br><br><br><br><br>
+    <input id='sothu1' type="number" name= '' placeholder="Nhập số thứ 1">
+    <input id='sothu2' type="number" name= '' placeholder="Nhập số thứ 2">
+    <br>
+    <button onclick="cong()">+</button>
+    <button onclick="tru()">-</button>
+    <button onclick="nhan()">x</button>
+    <button onclick="chia()">/</button>
+    <br>
+    <p> Kết quả là:</p>
+    <div id ='ketqua'>0</div>
+
+    <script>
+        function cong() {
+            let sothu1 = document.getElementById('sothu1').value
+            let sothu2 = document.getElementById('sothu2').value
+            let tong = Number(sothu1) + Number(sothu2)
+            document.getElementById("ketqua").innerHTML = tong
+        }
+        function tru() {
+            let sothu1 = document.getElementById('sothu1').value
+            let sothu2 = document.getElementById('sothu2').value
+            let hieu = Number(sothu1) - Number(sothu2)
+            document.getElementById("ketqua").innerHTML = hieu
+        }
+        function nhan() {
+            let sothu1 = document.getElementById('sothu1').value
+            let sothu2 = document.getElementById('sothu2').value
+            let tich = Number(sothu1) * Number(sothu2)
+            document.getElementById("ketqua").innerHTML = tich
+        }
+        function chia() {
+            let sothu1 = document.getElementById('sothu1').value
+            let sothu2 = document.getElementById('sothu2').value
+            let thuong = Number(sothu1) / Number(sothu2)
+            document.getElementById("ketqua").innerHTML = thuong
+        }
+
+        
+    </script>
+</body>
+</html>

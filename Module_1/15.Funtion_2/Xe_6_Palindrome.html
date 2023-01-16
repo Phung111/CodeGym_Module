@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="text" id="stringIn" value="abcba"><br>
+        <button id="checkPlaindrome" onclick="checkPlaindrome()">checkPlaindrome</button>
+    </center>
+    
+    <script>
+        function checkPlaindrome() {
+            let stringIn = document.getElementById("stringIn").valuep0
+            let length = stringIn.length
+            let firstletter = stringIn.charAt(0);
+            let lastletter = stringIn.charAt(length-1);
+            let check = true;
+
+            if (firstletter = lastletter ) { 
+                for (i = 1 ; i < length-2 ; i++) { 
+                    if (stringIn.charAt(i) !== stringIn.charAt(length-(i+1))) {
+                        check = false;
+                        break;
+                    }
+                }
+                check == true ? alert("It is a palindrome string") : alert("Not palindrome string");
+            
+            } else {
+                alert("Not palindrome string")
+            }
+        }
+    </script>
+</body>
+</html>

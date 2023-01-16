@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br><br>
+    <script>
+        let a = prompt("Nhập vào một giá trị bất kỳ để kiểm tra")
+        let b = ["a", "b", "c", 1, 2, 3]
+        for ( i = 0 ; i < b.length ; i++ ) {
+            if ( a == b[i]) {
+                alert("Giá trị này có trong mảng");
+                break;
+            } else {
+                 if ( i == (b.length-1)) {
+                        alert("Giá trị này không có trong mảng")
+                }
+             }
+        }
+        document.write(typeof(b[4])) 
+  
+        
+    
+    </script>
+</body>
+</html>

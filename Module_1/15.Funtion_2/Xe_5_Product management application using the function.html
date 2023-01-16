@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <p>Product list</p>
+        <div id="tableList"></div>
+        <!-- <textarea id="textarea" cols="30" rows="10"></textarea> <br> -->
+        <input type="text" size="30px"> <br><br>
+        <button id="add" >Add</button>
+        <button id="edit">Change Name</button>
+        <button id="delete">Delete</button>
+    </center>
+    <script>
+        function showProductList(collumn) {
+            let productList = ['water', 'cookie', 'bag', 'paper','pen', 'pencil'];
+            let row = productList.length;
+            let tbList = "<table><thead><tr>"
+            for (i = 0; i < a ; i++) {
+
+            }
+            tbList += "</tr>"
+            tbList += "</thead>"
+            tbList += "<tbody>"
+            for (i = 0 ; i < collumn ; i++) {
+                tbList += "<tr>";
+                    for (j = 0; j < productList.length; j++) {
+                        tbList += `<td>${productList[j]}</td>`;
+                    }
+            }
+                tbList += "</tr>";
+
+            tbList += "</tbody></table>";
+            document.getElementById("tableList").innerHTML = tbList
+        }
+        showProductList(3);
+    </script>
+</body>
+</html>

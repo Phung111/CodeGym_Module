@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <br><input type="button" value = "Bài 1" onclick="bai1()"> In dãy Fibonaci
+    <br><input type="button" value = "Bài 2" onclick="bai2()"> Tính giai thừa của một số nguyên dương
+    <br><input type="button" value = "Bài 3" onclick="bai3()"> In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau
+    <br><input type="button" value = "Bài 4" onclick="bai4()"> In hình chữ nhật
+    <br><input type="button" value = "Bài 5" onclick="bai5()"> Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+    <br><input type="button" value = "Bài 6" onclick="bai6()"> In hình trái tim
+
+    <script>
+        function bai1() {
+            let number = +prompt('Enter number');
+            let n1 = 0, n2 = 1, nexterm;
+            document.write("Number: " + number + "<br>");
+            document.write("Fibonacci Series: " );
+            for ( i = 1; i <= number; i++ ) {
+                document.write(n1 + ",");
+                nexterm = n1 + n2;
+                n1 = n2;
+                n2 = nexterm;
+            }
+        }
+        
+        function bai2() {
+            let number = +prompt('Enter number >0');
+            let n = 1;
+            document.write("Number entered: " + number + "<br>");
+            for ( i = 1; i <= number; i++ ) {
+                n = n*i;
+
+                
+            }
+            document.write("!" + number + " = " + n + "<br>");
+        }
+
+        function bai3() {
+            for ( i = 0 ; i < 5 ; i++) {
+                for (j = 0 ; j <= i; j++) {
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+            document.write("<br>")
+
+            for ( i = 5 ; i > 0 ; i--) {
+                for (j = 0 ; j < i; j++) {
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+            document.write("<br>")
+
+            for ( i = 5 ; i > 0 ; i--) {
+                for (j = 1 ; j < i; j++) {
+                    document.write("&ensp;")
+                }
+
+                for (k = 5 ; k >= i; k--) {
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+            document.write("<br>")
+
+            for ( i = 5 ; i > 0 ; i--) {
+                for (k = 4 ; k >= i; k--) {
+                    document.write("&ensp;")
+                }
+
+                for (j = 0 ; j < i; j++) {
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+            document.write("<br>")
+        }
+        
+        function bai4() {
+            for (i=1;i<=4;i++) {
+                for (j=1;j<=10;j++) {
+                    if ( i == 1 || i == 4 || j == 1 || j == 10) {
+                        document.write("*")
+                    } else {document.write("&ensp;")}
+                }
+                document.write("<br>")
+            }
+        }
+        
+        function bai5() {
+            let tienvay = +prompt("Nhập số tiền đã vay")
+            let tienthanhtoan = +prompt("Nhập số tiền đã thanh toán")
+            let laisuat = +prompt("Nhập lãi suất một tháng")
+            let thang = +prompt("Nhập số tháng đã vay")
+        
+            document.write("Số tiền đã vay: " + tienvay + "<br>");
+            document.write("Số tiền đã thanh toán: " + tienthanhtoan + "<br>");
+            document.write("Lãi suất: " + laisuat + "%" + "<br>");
+            document.write("Số tháng: " + thang + "<br>");
+
+            let soduconlai = tienvay - tienthanhtoan;
+            if (soduconlai > 0) {
+                for ( i = 1 ; i <=thang ; i++) {
+                    let sotienlaiphaiitra = soduconlai * laisuat/100
+                    soduconlai += sotienlaiphaiitra
+                }
+            } else {alert("Chuc mung ban da thoat no")}
+
+            document.write("Số tiền phải trả: " + soduconlai + "<br>");
+
+
+        }
+
+        function bai6() {
+            for (i=1; i<=6 ;i++) {
+                for (j=1; j<=7 ;j++) {
+                    if (
+                        i == 1 && (j == 2 || j == 3 || j == 5 || j == 6 )
+                        || i == 2
+                        || i == 3
+                        || i == 4 && ( 2 <= j && j <=6 ) 
+                        || i == 5 && ( 3 <= j && j <=5 )
+                        || i == 6 && j == 4
+                        ) {
+                        document.write(" * ")
+                    } else {document.write("&ensp;")}
+                }
+                document.write("<br>")
+            }
+        }
+        
+    </script>
+</body>
+</html>

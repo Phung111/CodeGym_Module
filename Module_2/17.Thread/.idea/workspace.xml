@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8bd49c58-b2ce-49e4-8715-f44254616793" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../13.SearchAlgorithm/SearchAlgorithm/src/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.SearchAlgorithm/SearchAlgorithm/src/LongestString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/CopyFileText/CopyFileText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/LargestNumberText/FindMaxValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/LargestNumberText/ReadAndWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/LargestNumberText/numbers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/ReadCSV/ReadCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/SumNumberInText/ReadFileExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/fileReadAndWrite/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/fileReadAndWrite/FileReaderMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/fileReadAndWrite/IModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/fileReadAndWrite/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/IOTextFile/src/testDate/testDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/data/copy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/data/csv.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/data/customer.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../16.IOTextFile/data/product.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Module_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Module_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/ArrayList_Library/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/ArrayList_Library/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/ArrayList_Library/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/ArrayList_Library/MyListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/MyLinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/MyLinkedList/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/MyList/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/MyList/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/fanoop/Fan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/fanoop/NhaMaySenko.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/fanoop/StopWatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/javabuoi123/Arrray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/javabuoi123/Loop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/javabuoi123/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/javabuoi123/MyClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/javabuoi123/MyMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/javabuoi123/VienThuoc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/src/main/java/com/codegym/javabuoi123/VienThuocMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/.idea/target.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/fanoop/Fan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/fanoop/NhaMaySenko.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/fanoop/StopWatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/fanoop/abc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/javabuoi123/Arrray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/javabuoi123/Loop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/javabuoi123/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/javabuoi123/MyClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/javabuoi123/MyMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/javabuoi123/VienThuoc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hellojava/target/classes/com/codegym/javabuoi123/VienThuocMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zKnowledge/Báo cáo/[CodeGym]_BC_C0222H1__PHAM HUYNH THIEN PHUNG_Báo cáo tuần 3_20-11-2022 - Copy.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zKnowledge/Slides_Module_2_Java/[2] Bộ câu hỏi phỏng vấn module 2 JAVA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../zKnowledge/Slides_Module_2_Java/[2] Bộ câu hỏi phỏng vấn module 2 JAVA.docx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2JnRY93dRWdBLi2qYDCM3iqVrVx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bd49c58-b2ce-49e4-8715-f44254616793" name="Changes" comment="" />
+      <created>1672711909518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672711909518</updated>
+      <workItem from="1672711915216" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

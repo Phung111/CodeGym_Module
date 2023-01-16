@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<style>
+		body {
+			font: 14px "Century Gothic", Futura, sans-serif;
+			margin: 20px;
+		}
+		.square {
+			background: #fff;
+			border: 1px solid #999;
+			float: left;
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 34px;
+			height: 34px;
+			margin-right: -1px;
+			margin-top: -1px;
+			padding: 0;
+			text-align: center;
+			width: 34px;
+		}
+	</style>
+</head>
+
+<body>
+</body>
+
+<script>
+	let currentTurn = "X";
+	const board = new Array(100).fill(0).map(() => new Array(100).fill(0));
+	for (let i = 0; i < 100; i++) {
+		for (let j = 0; j < 100; j++) {
+			const cell = document.createElement("div");
+			cell.classList.add("square");
+			cell.id = `${i}-${j}`;
+			cell.addEventListener("click", () => {
+				if (board[i][j] === 0) {
+					board[i][j] = currentTurn;
+					cell.innerHTML = currentTurn;
+					currentTurn = currentTurn === "X" ? "O" : "X";
+					if  (hasWinner()) {
+						alert(`${currentTurn === "X" ? "O" : "X"} wins!`);
+					}
+				}
+			});
+			document.body.appendChild(cell);
+		}
+	}
+
+</script>
+
+</html>
+
+
+
+
+

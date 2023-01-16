@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/3.Array_Method.iml" filepath="$PROJECT_DIR$/.idea/3.Array_Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Class_Object/Class_Object.iml" filepath="$PROJECT_DIR$/Class_Object/Class_Object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pr_1_Array_Reserve/Pr_1_Array_Reserve.iml" filepath="$PROJECT_DIR$/Pr_1_Array_Reserve/Pr_1_Array_Reserve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pr_2_Find_value_in_Array/Pr_2_Find_value_in_Array.iml" filepath="$PROJECT_DIR$/Pr_2_Find_value_in_Array/Pr_2_Find_value_in_Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pr_5_Array_Smallest_value/Pr_5_Array_Smallest_value.iml" filepath="$PROJECT_DIR$/Pr_5_Array_Smallest_value/Pr_5_Array_Smallest_value.iml" />
+    </modules>
+  </component>
+</project>

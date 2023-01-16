@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="450" height="250" style="border:1px solid #000"></canvas>
+
+    <script>
+    //Tạo lớp các hình chữ nhật
+    function Retangle(length, width) {
+    this.length = length;
+    this.width = width;
+
+    this.setLength = function(length) {
+        this.length  = length;
+            }
+    this.setWidth = function(width) {
+        this.width  = width;
+            }
+
+    this.getPerimeter = function(){
+        return (this.length + this.width)*2;
+    }
+    this.getArea = function(){
+        return this.length*this.width
+    }
+    }
+    
+    //Khai báo và khởi tạo một đối tượng kiểu Rectangle
+    let retangle =  new Retangle(200, 100);
+    
+    
+    //Hiển thị hình chữ nhật trên màn hình web (canvas)
+    function drawRetangle(){
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+        // ctx.fillStyle = "#FFF";
+        var x = retangle.length;
+        var y = retangle.width;
+        ctx.fillRect(0, 0, x, y);
+    }
+    
+
+    //Thay đổi chiều dài và chiều rộng của hình chữ nhật.
+    retangle.setLength(200)
+    retangle.setWidth(200)
+    
+
+    //In ra màn hình diện tích và chu vi của hình chữ nhật đó.
+    var perimeter = retangle.getPerimeter();
+    var area = retangle.getArea();
+    console.log(`Chu vi hcn: ${perimeter}`);
+    console.log(`Diện tích hcn: ${area}`);
+
+    drawRetangle()
+    
+    </script>
+</body>
+</html>

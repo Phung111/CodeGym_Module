@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //Bài 1
+    // for (i=1; i<100; i++) {
+    //     document.write(i + "<br>")
+    //     if (i==10) {alert ('Hoàn thành')}
+    // } 
+    
+    //Bài 2
+    // let a;
+    // while (20 < a < 100) {
+    //     a = prompt('Nhập nhiệt độ hiện tại');
+    //     if (a<20) {alert("Nên tăng nhiệt độ lên")}
+    //     else if (a>100) {alert("Nên giảm nhiệt độ xuống")}
+    // }
+
+    //Bài 3
+    // let number = +prompt('Enter number');
+    // let n1 = 0, n2 = 1, nexterm;
+    // document.write("Number: " + number + "<br>");
+    // document.write("Fibonacci Series: " );
+    // for ( i = 1; i <= number; i++ ) {
+    //     document.write(n1 + ",");
+    //     nexterm = n1 + n2;
+    //     n1 = n2;
+    //     n2 = nexterm;
+    // }
+
+    // Bài 4
+    // let number = +prompt('Enter number');
+    // let n1 = 0, n2 = 1, nexterm;
+    // document.write("Number: " + number + "<br>");
+    // document.write("Fibonacci Series: " );
+    // for ( i = 1 ; i <= number; i++ ) {
+    //     document.write(n1 + ",");
+    //     if (n1 % 5 == 0 && n1 != 0) {
+    //         alert("Số thứ 2 trong dãy filbonacci chia hết cho 5 là: " + n1);
+    //         break;
+    //     }
+    //     nexterm = n1 + n2;
+    //     n1 = n2;
+    //     n2 = nexterm;
+    // }
+
+    // Bài 5
+    // let number = +prompt('Enter number');
+    // let n1 = 0, n2 = 1, nexterm;
+    // let sum = 0;
+    // document.write("Number: " + number + "<br>");
+    // document.write("Fibonacci Series: " );
+    // for ( i = 1; i <= number; i++ ) {
+    //     document.write(n1 + ",");
+    //     sum += n1;
+    //     nexterm = n1 + n2;
+    //     n1 = n2;
+    //     n2 = nexterm;
+    // }
+    // document.write( "<br>" + "Tổng = " + sum)
+
+    // Bài 6
+    // let number = +prompt('Enter number');
+    // let count = 0;
+    // let sum = 0;
+    // document.write("Number: " + number + "<br>");
+    // document.write(number + " số chia hết cho 7: <br>" );
+    // for ( i = 1;  ; i++ ) {
+    //     if (i % 7 == 0) {
+    //         document.write(i+ "<br>");
+    //         sum += i;
+    //         count += 1
+    //         if(count == number) break;
+    //     }
+    // }
+    // document.write( "<br>" + "Tổng = " + sum)
+
+    // Bài 7
+    // for (i=1; i<100; i++) {
+    //     if (i % 3 == 0) {document.write('Fizz'+ '<br>')
+    //     } else if (i % 5 == 0) {document.write('Buzz'+ '<br>')
+    //     } else if (i % 3 == 0 && i % 5 == 0) {document.write('Fizz'+ '<br>')
+    //     } else {document.write(i+ '<br>')
+    //     }
+    // }
+
+    // Bài 8
+    alert("Yo Let's go");
+    alert("Guess which number in a range");
+    let min = prompt("Enter min number");
+    let max = prompt("Enter max number");
+    let i = parseInt(Math.random() * (max - min + 1) + min)
+    let n = prompt("Enter which number you guess")
+    for (a = 3 ; a > 0 ;a--) {
+        if (n == i) {
+            alert("Your guess is correct")
+        } else {
+            alert("Your guess is not correct");
+            if (a == 1) {
+                alert("You lose");
+                alert("Press F5 to play again");
+                break;
+            }
+            alert("You have "+ (a-1) +" guess left");
+            let n = prompt("Enter which number you guess next")
+        }
+        
+    }
+
+
+</script>
+</body>
+</html>

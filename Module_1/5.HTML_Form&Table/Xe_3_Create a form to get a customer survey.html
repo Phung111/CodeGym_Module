@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            width: 20px;
+            display: inline-block;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey</p>
+    <hr>
+    <h3>What is your range?</h3>
+    <select style="width:300px">
+        <option disabled selected hidden>18-24</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+    </select>
+    <br>
+    <h3>What is your yearly income range?</h3>
+    <select style="width:300px;">
+        <option disabled selected hidden>$0-$25000</option>
+        <option>$0</option>
+        <option>$10000</option>
+        <option>$20000</option>
+        <option>$20000</option>
+        <option>$22000</option>
+    </select>
+    <h3>Gender</h3>
+    <input type="radio">Male <br>
+    <input type="radio">Female
+    <h3>Which of the following products have your purchased in the last 2 months. Please check all that apply</h3>
+    <input type="checkbox">Product1 <br>
+    <input type="checkbox">Product2 <br>
+    <input type="checkbox">Product3 <br>
+    <h3>How often would you use our new product?</h3>
+    <input type="radio">Daily <br>
+    <input type="radio">Weekly <br>
+    <input type="radio">Montly <br>
+    <h3>What would you like a new product?</h3>
+    $<input type="text">-<input type="text">
+    <h3>What would you pay for the new product?</h3>
+    <input type="areatext">
+    <h3>PLease rate your level of agreement with the following statements</h3>
+    <table border="1" style="border-collapse: collapse;">
+        <Style>
+            table {
+                text-align: center;
+            }
+            
+            #left{
+                text-align: left;
+            }
+            table tr td .class100 {
+                width: 100px;
+            }
+        </Style>
+        <tr>
+            <td></td>
+            <td  class="100">Strongly Disagree</td>
+            <td  class="100">Disagree</td>
+            <td  class="100">Agree</td>
+            <td  class="100">Strongly Agree</td>
+        </tr>
+        <tr>
+            <td id="left">Our pro ducts are priced fairly</td>
+            <td><label><input type="radio" name="number">1</label></td>
+            <td><label><input type="radio" name="number">2</label></td>
+            <td><label><input type="radio" name="number">3</label></td>
+            <td><label><input type="radio" name="number">4</label></td>   
+        </tr>
+        <tr>
+            <td id="left">Our pro ducts are high quality</td>
+            <td><label><input type="radio" class="bang">1</label></td>
+            <td><label><input type="radio" class="bang">2</label></td>
+            <td><label><input type="radio" class="bang">3</label></td>
+            <td><label><input type="radio" class="bang">4</label></td>   
+        </tr>
+        <tr>
+            <td id="left">You would recommend our product to a friend or coworker</td>
+            <td><label><input type="radio" class="bang">1</label></td>
+            <td><label><input type="radio" class="bang">2</label></td>
+            <td><label><input type="radio" class="bang">3</label></td>
+            <td><label><input type="radio" class="bang">4</label></td>   
+        </tr>
+    </table>
+    <button>Submit</button>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br><br>
+    <br><input type="button" value = "Bài 1" onclick="bai1()"> Phát triển một ứng dụng từ điển đơn giản. Ứng dụng cho phép tra cứu các từ tiếng Anh sang tiếng Việt. Danh sách các từ được lưu trữ trong các mảng.
+    <script>
+        function bai1() {
+           let a1 = ["apple", "banana", "mango", "watermelon", "pinaple"] ;
+           let a2 = ["táo", "chuối", "xoài", "dưa hấu", "trái thơm"] ;
+           let word = prompt("Nhập vào từ cần tra từ điển").toString();
+           let result = "";
+           for ( i = 0 ; i <= word.length ; i++ ) {
+                if ( word == a1[i]) {
+                    result += a2[i];
+                } else if (word == a2[i]) {
+                    result += a1[i];
+                }
+                if (i == word.length) {document.write("Từ đã nhập không có trong từ điển")}
+                
+            }
+            
+            //     document.write("<br>" +"<br>" +"<br>" +"<br>" +"<br>")
+            //     
+            // }
+            document.write("<br>" +"<br>" +"<br>" +"<br>" +"<br>")
+            document.write(result)
+        }
+
+    </script>
+</body>
+</html>

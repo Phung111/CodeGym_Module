@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <textarea name="" id="text" cols="30" rows="10" onkeydown="typekey()"></textarea>
+    </center>
+    <script>
+        
+        function typekey() {
+            let a = ["I"," ","a","m"," ","s","t","u","p","i","d"," ","h","a"," ","h","a"," ","h","a"," "]
+            let n ="";
+            textin = document.getElementById("text").value
+            for ( i = 0 ; i < textin.length ; i++ ) {
+                n = n + a[i];
+                if (i == a.length) {
+                    document.getElementById("text").value = "";
+                    n = "";
+                }
+            }
+            document.getElementById("text").value = n;
+            n = "";
+            setTimeout("typekey()", 1) // Thực thi 1 milli giây kể từ khi gọi hàm typekey()
+        }
+    </script>
+</body>
+</html>

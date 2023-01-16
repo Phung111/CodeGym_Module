@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;    
+        }
+        /* CSS cho bàn cờ */
+        table, tr, td {
+            border: 1px solid;
+            border-collapse: collapse;
+           
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        body {
+            min-width: 5000px;
+            min-height: 5000px;
+            
+        }
+        button {
+            color: rgb(255, 255, 255); /* màu chữ*/
+            background-color: #ffffff; /* màu nền nút*/
+            width: 52px;
+            height: 52px;
+            font-size: 10px; /* cỡ chữ*/
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(119, 119, 119);
+        }
+    </style>
+<body>
+    <script>
+        // Cố định số hàng và cột bằng var
+        var size = 50;
+        let array = [];
+
+        // Tạo mảng 2 chiều để xác định toạ độ
+        for ( i = 0 ; i < size ; i++ ) {
+            array[i] = [size];//Khai báo pt của mảng có a phần tử khác
+            for ( j = 0 ; j < size ; j++ ) {
+                array[i][j] = "";
+            }
+        }
+        //Tạo bàn cờ bằng table
+        document.write(`<table>`)
+        for ( i = 0 ; i < size ; i++ ) {
+            document.write(`<tr>`)
+            array[i] = [size];
+            for ( j = 0 ; j < size ; j++ ) {
+                 document.write(
+                    `<td>
+                        <button value="" onclick="click(this)"></button>
+                    </td>`);
+            }
+            document.write(`</tr>`);
+        }
+        document.write(`</table>`)
+        
+        // Tạo mảng 2 chiều để xác định toạ độ
+        for ( i = 0 ; i < size ; i++ ) {
+            array[i] = [size];//Khai báo pt của mảng có a phần tử khác
+            for ( j = 0 ; j < size ; j++ ) {
+                array[i][j] = "";
+            }
+        }
+        
+        //Sự kiện khi click vào
+        let replace = document.get
+        function click() {
+            replace = "x";
+        }
+        window.addEventListener('click', click)
+
+        
+    </script>
+</body>
+</html>

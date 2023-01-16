@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// Bài 1
+// let a = +prompt('Nhập a: ');
+// let b = +prompt('Nhập b: ');
+// if ( a % b == 0) {alert('Chia tay')}
+// else {alert('Không chia tay')}
+
+// Bài 2
+// let a = +prompt('Nhập tuổi vào lớp 10: ');
+// if ( a > 14) {alert('Đủ tuổi học lớp 10')}
+// else {alert('Chưa đủ tuổi')}
+
+// Bài 3
+// let a = +prompt('Nhập số nguyên bất kỳ: ');
+// if ( a > 0) {alert('Số này lớn hơn 0')}
+// else if (a < 0) {alert('Số này nhỏ hơn 0')}
+// else {alert('Số này bằng 0')}
+
+// Bài 4
+// let a = +prompt('Nhập a: ');
+// let b = +prompt('Nhập b: ');
+// let c = +prompt('Nhập c: ');
+// let d = null;
+// (a>b && a>c) ? d=a : b>c ? d=b : d=c;
+// alert('Số lớn nhất là ' + d)
+
+// Bài 5
+// let a = +prompt('Nhập điểm kiểm tra: ');
+// let b = +prompt('Nhập điểm giữa kỳ: ');
+// let c = +prompt('Nhập điểm cuối kỳ: ');5
+// let d = a*0.2 + b*0.2 + c*0.6;
+//     if (d<4) {alert('Điểm TB ' + d + ' xếp loại '+'Trung bình')}
+//     else if (d<8) {alert('Điểm TB ' + d + ' xếp loại '+'Khá')}
+//     else {alert('Điểm TB ' + d + ' xếp loại '+'Giỏi')}
+
+// Bài 6
+// let a = +prompt('Nhập số sp bán được: ');
+// let b = +prompt('Giá 1 sp: ');
+// let c = +a*b;
+// let d = c;
+// if ( a < 100) {d = c*0.05}
+// else if (a<250) {d = c*0.1}
+// else if (a<500) {d = c*0.15}
+// else if (a<750) {d = c*0.2}
+// else {d = c*0.25}
+// alert('Tiền hoa hồng ' + d)
+
+// Bài 7
+let a = +prompt('Nhập tổng thời lượng cuộc gọi (phút): ');
+let b = null;
+if (a<50) {b = 600*(50-a)}
+else if (a<150) {b = 600*50 + 400*(150-a)}
+else if (a<200) {b = 600*50 + 400*150 + 200*(200-a)}
+else (b = 600*50 + 400*150 + 200*a)
+if (b<25000) {alert('Cước điện thoại của gia đình bạn là 25000')}
+else {alert('Cước điện thoại của gia đình bạn là ' + b)}
+
+</script> 
+</body>
+</html>

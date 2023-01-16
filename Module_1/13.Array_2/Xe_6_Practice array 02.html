@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><br><br><br>
+    
+    <br><input type="button" value = "Bài 1" onclick="bai1()"> Viết chương trình khởi tạo mảng 2 chiều, gồm một bộ các phần tử có sẵn,  in ra các phần tử trong mảng. Chú ý: Sử dụng vòng lặp for lồng nhau
+    <br><input type="button" value = "Bài 2" onclick="bai2()"> Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược. Ví dụ, nếu một mảng chứa các ký tự  [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc"    
+    <br><input type="button" value = "Bài 3" onclick="bai3()"> Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng.    
+    <br><input type="button" value = "Bài 4" onclick="bai4()"> Viết một chương trình để đếm số từ trong một chuỗi
+    <br><input type="button" value = "Bài 5" onclick="bai5()"> Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+    <br><input type="button" value = "Bài 6" onclick="bai6()"> Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+    
+    <script>
+        function bai1() {
+            let numbera = +prompt("Nhập số pt row ");
+            let numberb = +prompt("Nhập số pt column ");
+            let a = [];
+            let b = [];
+            document.write("<br>" +"<br>" +"<br>" +"<br>" +"<br>");
+
+            for (let i=0; i< numbera; i++) {
+                document.write("row " + i + "<br>")
+                for (let j = 0; j < numberb ; j++) {
+                    b[j] = +prompt("Nhập row " + (i+1) + " column " + (j+1));    
+                }
+                // document.write("[ " + b + " ],<br>");
+                    
+                a[i] = "<br>[ " + b + "]" ;
+            }
+            // document.write("Mảng a = [ " + a + " <br>]");
+            for (let i = 0; i< numbera; i++) {
+                document.write("row " + i + "<br>")
+                for (let j = 0; j < numberb ; j++) {
+                    document.write(a[i][j] + "<br>")
+                }
+                document.write("<br>")
+            }
+
+        }
+
+        function bai2() {
+            let number = +prompt("Nhập số pt ");
+            let array = [];
+            document.write("<br>" +"<br>" +"<br>" +"<br>" +"<br>");
+
+            for (let i = 0; i< number; i++) {
+                array[i] = prompt("Nhập pt thứ " + i)
+            }
+            document.write( "Mảng đã nhập array =[ " + array + "  ]<br>")
+            document.write("Đảo ngược và in ra chuỗi: " + array.reverse().join(""))
+        }
+        
+        function bai3() {
+            let number = +prompt("Nhập số pt ");
+            let array = [];
+            let numberarray = [];
+            let count = 0;
+            document.write("<br>" +"<br>" +"<br>" +"<br>" +"<br>");
+
+            document.write("[<br>")
+            for (let i = 0; i< number; i++) {
+                array[i] = prompt("Nhập pt thứ " + i)
+                if (+array[i]) {
+                    count++;
+                    numberarray.push(array[i])
+                    
+                }
+                document.write(array[i] + "<br>")
+            }
+            document.write("  ]<br>")
+
+            document.write("Mảng đã nhập [ " + array + " ]<br>")
+            document.write("số trong mảng [ " + numberarray + " ]<br>")
+            document.write("Đếm số trong mảng: " + count + "<br>")
+
+        }
+
+        function bai4() {
+            let chuoi = prompt("Nhập chuỗi ")
+            let onlychuoi = [];
+            let count = 0;
+            document.write("<br>" +"<br>" +"<br>" +"<br>" +"<br>");
+
+            for ( i = 0 ; i < chuoi.length ; i++) {
+                if ( !+chuoi.charAt(i) ) { 
+                    // charAt(i) để ấy ký tự thứ i ra
+                    // + trả về kiểu dữ liệu số
+                    // ! not tức là nếu dữ liệu số trên = false --> lấy phần chữ
+                    // Tổng hợp 3 cái lại nghĩa là: Nếu không phải kiểu dữ liệu số.
+                    count++;
+                    onlychuoi.push(chuoi.charAt(i));
+                    // document.write(chuoi.charAt(i) + "<br>")
+                }
+            }
+            
+            // document.write("Độ dài chuỗi [ " + chuoi.length + " ]<br>")
+            document.write("Chuỗi đã nhập [ " + chuoi + " ]<br>")
+            document.write("Chữ trong mảng [ " + onlychuoi + " ]<br>")
+            document.write("Đếm từ trong mảng: " + count + "<br>")
+        }
+        
+        function bai5() {
+            let chuoi1 = prompt("Nhập chuỗi 1");
+            let chuoi2 = prompt("Nhập chuỗi 2");
+            let dodaichuoi = 0;
+            //Kiểm tra 2 chuỗi có bằng nhau
+            let result = "Không giống";
+            if (chuoi1.length !== chuoi2.length) {
+                result = "Không giống"
+            } else {
+                for (i = 0; i < chuoi1.length; i++) {
+                    if(chuoi1.charAt(i) !== chuoi1.charAt(i)) {
+                        result = "Không giống";
+                        break;
+                    }
+                    result = "Giống";
+                }
+            }
+            document.write("<br>" +"<br>" +"<br>" +"<br>" +"<br>");
+            document.write( "Chuỗi 1 : " + chuoi1 + "<br>");
+            document.write( "Chuỗi 2 : " + chuoi2 + "<br>");
+            document.write( "2 chuỗi " + result + "<br>");
+        }
+
+        function bai6() {
+            let number = +prompt("Nhập số phần tử ");
+            let array = [];
+            let newarray = [];
+            document.write("<br>" +"<br>" +"<br>" +"<br>" +"<br>");
+
+            for (let i = 0; i < number ; i++) {
+                array[i] = prompt("Nhập phần tử thứ " + i);
+                for (j = 0; j < array[i].length ; j++) {
+                    if (array[i].charAt(j) == "-") {        
+                        newarray[i] = array[i].replace(/[-]/g, "_"); 
+                    }
+                }   
+            }
+            document.write(`Mảng nhập vào [${array}]<br>`)
+            document.write(`Mảng chuyển '-'' thành '_' [${newarray}]`)
+        }
+
+    </script>
+</body>
+</html>

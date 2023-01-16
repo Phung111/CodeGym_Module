@@ -1,0 +1,13 @@
+Git clone http.....
+Git fetch
+Git pull
+
+Git add .
+Git status
+Git commit -m '_'
+Git push -u origin
+
+Git reflog
+Git reset --hard 0232a9e
+
+rmdir /s .git //Xoá một file .git trên máy tính

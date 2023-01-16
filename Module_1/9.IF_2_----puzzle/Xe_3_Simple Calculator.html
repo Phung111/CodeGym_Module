@@ -1,0 +1,52 @@
+<html>
+    <input type="text" id="textin" size = "50px">
+    <table>
+        <tr>
+           <td><button value = "1" onclick="inputvalue(this.value)">1</button></td>
+           <td><button value = "2" onclick="inputvalue(this.value)">2</button></td>
+           <td><button value = "3" onclick="inputvalue(this.value)">3</button></td>
+           <td><button value = "+" onclick="inputvalue(this.value)">+</button></td>
+        </tr>
+        <tr>
+           <td><button value = "4" onclick="inputvalue(this.value)">4</button></td>
+           <td><button value = "5" onclick="inputvalue(this.value)">5</button></td>
+           <td><button value = "6" onclick="inputvalue(this.value)">6</button></td>
+           <td><button value = "-" onclick="inputvalue(this.value)">-</button></td>
+        </tr>
+        <tr>
+           <td><button value = "7" onclick="inputvalue(this.value)">7</button></td>
+           <td><button value = "8" onclick="inputvalue(this.value)">8</button></td>
+           <td><button value = "9" onclick="inputvalue(this.value)">9</button></td>
+           <td><button value = "*" onclick="inputvalue(this.value)">*</button></td>
+        </tr>
+        <tr>
+           <td><button value = "AC" onclick="reset(this.value)"         >AC</button></td>
+           <td><button value = "0"  onclick="inputvalue(this.value)"    >0</button></td>
+           <td><button onclick="result(this.value)"        >=</button></td>
+           <td><button value = "/"  onclick="inputvalue(this.value)"    >/</button></td>
+        </tr>
+    </table>
+    <script>
+        let textbox = document.getElementById("textin");
+        function inputvalue(value) {
+            textbox.value += value
+        }
+        function result() {
+            let a = eval(textbox.value)
+            textbox.value = a;
+        }
+        function reset() {
+            textbox.value = ""
+        }
+        //Thêm nút enter
+        function enterevent(evt) {
+            switch (evt.keyCode) {
+                case 13:
+                    result();
+                    break;
+            }
+        }
+        window.addEventListener('keydown', enterevent)
+        
+    </script>
+</html>

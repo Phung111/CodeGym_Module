@@ -1,0 +1,66 @@
+<html>
+<body>
+<center>
+    <!-- Mảng 1 -->
+    <input type="text" id="inputarray1" placeholder="Input size for array dad" value="30">
+    <button onclick="dp1()">Display</button>
+    <br><br>
+    <textarea id="itiemdad" cols="50" rows="15" ></textarea>
+    <br><br>
+    <!-- Mảng 2 -->
+    <input type="text" id="inputarray2" placeholder="Input size for array son" value="10">
+    <button onclick="dp2()">Take first size</button>
+    <button onclick="dp3()">Take random size</button>
+    <br><br>
+    <textarea id="itiemson" cols="50" rows="10" ></textarea>
+</center>
+<script>
+    //Nhập và hiển thị mảng 1
+    function dp1() {
+        let number1 = Number(document.getElementById("inputarray1").value);
+        let max = 90;
+        let min = 20;
+        var array1 = []
+        for ( i = 0 ; i < number1 ; i++) {
+            array1[i] = Math.floor(Math.random() * (max-min) + min)
+        } 
+        document.getElementById("itiemdad").value = array1.join("\n") //\n để xuống dòng
+        //Lưu array1 lên localStorage vào biến array
+        var a = JSON.stringify(array1)
+        localStorage.setItem('array', a)
+    }
+
+    //Nhập và hiển thị mảng 2
+    //Hiển thị number size đầu tiên của mảng 1
+    function dp2() {
+        let number2 = Number(document.getElementById("inputarray2").value);
+        // Lấy array 1 từ localStorage
+        var array1 = JSON.parse(localStorage['array']);
+        let array2 = [];
+        for ( i = 0 ; i < number2 ; i++) {
+            array2[i] = array1[i]
+        }  
+        document.getElementById("itiemson").value = array2.join("\n") //\n để xuống dòng
+    }
+    //Hiển thị random size của mảng 1
+    function dp3() {
+        let number3 = Number(document.getElementById("inputarray2").value);
+        // Lấy array 1 từ localStorage
+        var array1 = JSON.parse(localStorage['array']);
+        let array3 = [];
+        for ( i = 0 ; i < number3 ; i++) {
+            let j = Math.floor(Math.random() * (number3-1))
+            array3[i] = array1[j];
+            array1.splice(j, 1);
+        }  
+        document.getElementById("itiemson").value = array3.join("\n") //\n để xuống dòng
+    }
+    
+
+
+
+
+</script>
+</body>
+
+</html>

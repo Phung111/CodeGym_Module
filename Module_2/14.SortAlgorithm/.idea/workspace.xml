@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f8adbefe-c596-4747-ac45-e9abd4eacc36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../13.SearchAlgorithm/SearchAlgorithm/src/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Module_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/Module_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/ArrayList_Library/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/ArrayList_Library/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/ArrayList_Library/MyListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/ArrayList_Library/MyListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/MyLinkedList/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/MyLinkedList/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/MyList/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../10.DSA_List/DSA_List/src/MyList/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zKnowledge/Báo cáo/[CodeGym]_BC_C0222H1__PHAM HUYNH THIEN PHUNG_Báo cáo tuần 3_20-11-2022 - Copy.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zKnowledge/Slides_Module_2_Java/[2] Bộ câu hỏi phỏng vấn module 2 JAVA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../zKnowledge/Slides_Module_2_Java/[2] Bộ câu hỏi phỏng vấn module 2 JAVA.docx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2JRSFcSixUsh8mL224flFYCSZvF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8adbefe-c596-4747-ac45-e9abd4eacc36" name="Changes" comment="" />
+      <created>1672039304475</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672039304475</updated>
+      <workItem from="1672039306647" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
