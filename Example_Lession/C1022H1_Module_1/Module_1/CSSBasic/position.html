@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div{
+            height: 30px;
+            margin-bottom: 3px;
+        }
+        #div_1{
+            background-color: red;
+            position: relative;
+            height: 60px;
+            width: 300px;
+            left: 30px;
+            top:300px;
+            /* bottom: -100vh;
+            right: 100px; */
+        }
+        #div_11{
+            position: absolute;
+            background-color: yellow;
+            width: 100px;
+            left: 80px;
+        }
+        #div_2{
+            background-color: green;
+            position: fixed;
+            top: 0;
+        }
+        #div_3{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        position:
+            relative
+            absolute
+            fixed
+            sticky
+     -->
+     <!-- 
+        block vs inline block
+      -->
+      <div id="div_1">
+        <div id="div_11"></div>
+      </div>
+      <div id="div_2"></div>
+      <div id="div_3"></div>
+</body>
+</html>

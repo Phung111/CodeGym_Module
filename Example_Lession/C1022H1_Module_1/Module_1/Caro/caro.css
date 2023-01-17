@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+table, td{
+    border: 1px solid black;
+}
+
+.x_cell{
+    background-color: green;
+    color: white;
+}
+
+.o_cell{
+    background-color: orange;
+    color: white;
+}
+
+.empty_cell{
+    background-color: gainsboro;
+}

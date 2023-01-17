@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic</title>
+    <style>
+        *{
+            margin: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            /* background-color: red;
+             */
+            /* border: 2px dashed black; */
+            background-image: linear-gradient(to right bottom, red, orange, yellow);
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px blue;
+        }
+
+        #div_2, p{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px darkgoldenrod;
+            color: red !important;
+        }
+        .div_group{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        có 3 cách viết CSS vào trong HTML
+        cách 1 (inline style): viết vào trong thuộc tính style của element
+        cách 2 (internal style): viết vào bên trong cặp thẻ <style>
+        cách 3 (external style): viết mã css trong file có phần mở rộng là .css. Liên kết vào file HTML
+        thông qua thẻ <link>
+     -->
+    <!-- <div style="width: 100px; 
+                height: 100px; 
+                background-color: red;
+                border:2px dashed black;
+                border-radius: 50%;
+                box-shadow: 0px 0px 15px blue;
+                "></div> -->
+    <p style="color:blue">CGH</p>
+    <div></div>
+    <div id="div_2"></div>
+    <div class="div_group"></div>
+    <div></div>
+    <div class="div_group"></div>
+</body>
+
+</html>

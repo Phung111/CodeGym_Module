@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Size</td>
+                <td><input type="number" id="size" value="10"></td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td>
+                    <textarea id="result" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="showArray()">Show Array</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function showArray() {
+            let size = Number(document.getElementById("size").value);
+            let min = 20;
+            let max = 90;
+            let numbers = new Array(size);
+            for (let i = 0; i < size; i++) {
+                numbers[i] = Math.floor(Math.random() * (max - min + 1) + min);
+            }
+
+            let result = "";
+            for(let i = 0; i < size; i++){
+                result += `${numbers[i]}\n`;
+            }
+
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

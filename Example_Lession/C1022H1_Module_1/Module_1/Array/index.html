@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="keyword">Nhập từ:</label>
+    <input type="text" id="keyword">
+    <button onclick="translator()">Dịch</button>
+    <p id="result"></p>
+    <script>
+        let english = ["banana", "apple", "orange", "book"];
+        let vietnam = ["chuối", "táo", "cam", "sách"];
+        function translator() {
+            let keyword = document.getElementById("keyword").value;
+            let position = -1;
+            // b1: kiểm tra xem keyword có trong mảng English
+            for (let i = 0; i < english.length; i++) {
+                if (english[i].toLowerCase() == keyword.toLowerCase().trim()) {
+                    position = i;
+                    break;
+                }
+            }
+            // b2: dựa vào position để quyết định dịch
+            document.getElementById("result").innerHTML = `${position != -1 ? vietnam[position] : 'not found'}`;
+
+
+
+            // let index_eng = 0;
+            // let result = "";
+            // for (let i = 0; i < eng.length; i++) {
+            //     if (string == eng[i]) {
+            //         index_eng = i;
+            //         for (let j = 0; j < vie.length; j++) {
+            //             if (index_eng == j) {
+            //                 result = vie[j];
+            //             }
+            //         }
+            //     }
+            // }
+            // document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+</body>
+
+</html>

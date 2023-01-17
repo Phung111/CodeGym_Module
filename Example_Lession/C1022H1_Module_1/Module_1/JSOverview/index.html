@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Overview</title>
+</head>
+
+<body>
+    <!-- 
+        Có 3 cách để nhúng js vào html
+        cách 1 (inline): viết js trực tiếp vào event của element
+        cách 2 (internal): viết js vào trong cặp thẻ script, và cặp thẻ này được đặt trong html
+        cách 3 (external): viết js vào trong 1 file có phần mở rộng là .js. và nhúng file js này
+        vào trong html, qua thẻ script
+     -->
+
+    <button onmouseover="this.innerHTML = new Date()" onmouseout="this.innerHTML = 'Show current time'">
+        Show current time</button>
+
+    <input type="text" onblur="this.type='password'" onfocus="this.type='text'">
+    <br>
+    <button onclick="document.getElementById('avatar').style.display = 'block'">Show Avatar</button>
+    <img id="avatar" style="width:100px; display:none;"
+        src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?cs=srgb&dl=pexels-jonas-kakaroto-736230.jpg&fm=jpg"
+        alt="">
+    <br>
+
+    <input type="password" name="pw">
+    <!-- <button class="btn" onclick="showPassword()">Show password</button> -->
+    <input id="ckbPW" type="checkbox" onchange="showPW()"> Show password
+
+
+    <script>
+        function showPassword() {
+            if (document.getElementsByName('pw')[0].type == 'password') {
+                document.getElementsByName('pw')[0].type = 'text';
+                document.getElementsByClassName('btn')[0].innerHTML = 'Hide password'
+            }
+            else {
+                document.getElementsByName('pw')[0].type = 'password';
+                document.getElementsByClassName('btn')[0].innerHTML = 'Show password'
+            }
+        }
+
+        // function showPW() {
+        //     if (document.getElementById('ckbPW').checked == true) {
+        //         document.getElementsByName('pw')[0].type = 'text';
+        //     }
+        //     else {
+        //         document.getElementsByName('pw')[0].type = 'password';
+        //     }
+        // }
+    </script>
+    <script src="site.js"></script>
+</body>
+
+</html>

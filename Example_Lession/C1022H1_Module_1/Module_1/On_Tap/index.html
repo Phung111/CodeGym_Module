@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Number 1</td>
+                <td><input type="number" id="number_1"></td>
+            </tr>
+            <tr>
+                <td>Number 2</td>
+                <td><input type="number" id="number_2"></td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><input type="number" id="result"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" id="btnPlus" value="Plus" onclick="plus()"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function plus(){
+            // debugger;
+            // bước 1: lấy number 1
+            let number_1 = Number(document.getElementById('number_1').value);
+            // bước 2: lấy number 2'
+            let number_2 = Number(document.getElementById("number_2").value);
+            // bước 3: chuyển đổi dữ liệu
+
+            // bước 4: tính toán
+            let result = number_1 + number_2;
+            // bước 5: hiển thị kết quả
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>

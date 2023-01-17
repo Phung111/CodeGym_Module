@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="staff.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <title>Staff management</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="create-staff d-none">
+            <div class="staff-info">
+                <div class="form-group">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" id="fullname" class="form-control">
+                    <input type="hidden" id="staffId" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="avatar">Avatar</label>
+                    <input type="url" id="avatar" class="form-control" onchange="changeAvatar()">
+                </div>
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <select id="position" class="form-control">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" id="dob" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience</label>
+                    <input type="number" id="experience" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <select id="skills" class="form-control">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label></label>
+                    <input type="button" class="btn btn-success" value="Create" onclick="createStaff()">
+                    <input type="button" class="btn btn-warning d-none" value="Update" onclick="updateStaff()">
+                    <input type="button" class="btn btn-dark" value="Cancel" onclick="resetCreateForm()">
+                </div>
+            </div>
+            <div class="staff-avatar">
+                <img id="reviewAvatar" src="images/noavatar.jpg" alt="">
+            </div>
+        </div>
+        <div class="display-staff">
+            <input type="button" class="btn btn-danger" value="Delete" onclick="deleteStaffs()">
+            <input type="button" class="btn btn-secondary" value="Show" onclick="displayCreateArea(this)">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <input id="ckbStaffs" type="checkbox" onchange="selectAllStaff()">
+                        </th>
+                        <th>Fullname
+                            <span id="sort_asc" class="sort" title="Ascending" onclick="sort('asc')">&#x25B2;</span>
+                            <span id="sort_desc" class="sort" title="Descending" onclick="sort('desc')">&#x25BC;</span>
+                        </th>
+                        <th>Position</th>
+                        <th>Date of birth</th>
+                        <th>Experience</th>
+                        <th>Skills</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="staff.js"></script>
+</body>
+
+</html>

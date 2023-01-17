@@ -1,0 +1,6 @@
+ORDER_ITEM.txt
+IDORDERITEM, idOrder,idProduct,amount
+
+
+ORDER.txt
+IDORDER,nameCustomer,total,createAt,eStatusOrder
