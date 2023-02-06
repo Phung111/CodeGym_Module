@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Grid Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        div.col-12>p {
+            color: rgb(0, 0, 0);
+            margin: 10px;
+
+        }
+
+        div.col-2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid rgb(161, 145, 145);
+            border-bottom: none;
+        }
+
+
+        div.col-12 {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid rgb(161, 145, 145);
+        }
+
+
+        a {
+            color: black;
+        }
+
+        a img {
+            width: 150px;
+            height: 80px;
+            padding: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .container-fluid {
+            padding: 30px 45px;
+        }
+
+        .btn {
+            background-color: rgb(36, 33, 33);
+            color: white;
+            margin: 10px;
+            margin-left: 90%;
+            justify-content: flex-end;
+        }
+
+        .fa-trash-o {
+            color: blue;
+        }
+
+        .col-2>i.fa-usd {
+            color: blue;
+        }
+
+        .row:last-child {
+            padding-top: 20px;
+        }
+    
+        .col-6{
+            padding: 0;
+        }
+
+        .col-6:first-child{
+
+            padding-right: 20px;
+
+            /* border: 1px solid rgb(161, 145, 145); */
+        }
+
+        .col-6:last-child{
+            padding-left: 20px;
+            border: 1px solid rgb(161, 145, 145);
+        }
+
+
+        .col-6:first-child .col-12:nth-child(2){
+            
+            border-bottom: none;
+            border-top: none;
+        }
+
+        .col-6:first-child .col-12:nth-child(3){
+            border-bottom: none;
+            border-top: none;
+            
+        }
+
+        .col-6:first-child .col-12:nth-child(4){
+            border-top: none;
+
+        }
+
+  
+        .col-6:last-child .col-12{
+            border: none;
+            justify-content: flex-start;
+        }
+
+        .col-6:first-child .col-12{
+            justify-content: flex-start;
+        }
+
+        .col-6:first-child .col-12:first-child {
+            background-color: rgb(15, 14, 14);
+        }
+
+        .col-6:first-child .col-12:first-child p {
+            color: white;
+            background-color: rgb(15, 14, 14);
+        }
+
+        .col-6:last-child .col-12:first-child p {
+            color: white;
+            background-color: rgb(15, 14, 14);
+        }
+        
+        .col-6:last-child .col-12:first-child {
+            background-color: rgb(15, 14, 14);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <p>DELETE</p>
+                <p>IMAGE</p>
+                <p>PRODUCT</p>
+                <p>PRICE</p>
+                <p>QUANTITY</p>
+                <p>TOTAL</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 ">
+                <a href="#">
+                    <i class="fa fa-trash-o"></i> </a>
+            </div>
+            <div class="col-2 ">
+                <a href="#">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9A/production/_120424467_joy2.jpg"
+                        alt="picture">
+                </a>
+            </div>
+            <div class="col-2 ">
+                <a href="#">
+                    <p>Handbag Fringilla</p>
+                </a>
+            </div>
+            <div class="col-2 ">
+                <i class="fa fa-usd">65</i>
+            </div>
+            <div class="col-2 ">
+                <input min="0" max="100" value="1" type="number">
+            </div>
+            <div class="col-2 ">
+                <i class="fa fa-usd">65</i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 ">
+                <a href="#">
+                    <i class="fa fa-trash-o"></i> </a>
+            </div>
+            <div class="col-2 ">
+                <a href="#">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9A/production/_120424467_joy2.jpg"
+                        alt="picture">
+                </a>
+            </div>
+            <div class="col-2 ">
+                <a href="#">
+                    <p>Handbag Fringilla</p>
+                </a>
+            </div>
+            <div class="col-2 ">
+                <i class="fa fa-usd">65</i>
+            </div>
+            <div class="col-2 ">
+                <input min="0" max="100" value="1" type="number">
+            </div>
+            <div class="col-2 ">
+                <i class="fa fa-usd">65</i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 ">
+                <a href="#">
+                    <i class="fa fa-trash-o"></i> </a>
+            </div>
+            <div class="col-2 ">
+                <a href="#">
+                    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9A/production/_120424467_joy2.jpg"
+                        alt="picture">
+                </a>
+            </div>
+            <div class="col-2 ">
+                <a href="#">
+                    <p>Handbag Fringilla</p>
+                </a>
+            </div>
+            <div class="col-2 ">
+                <i class="fa fa-usd">65</i>
+            </div>
+            <div class="col-2 ">
+                <input min="0" max="100" value="1" type="number">
+            </div>
+            <div class="col-2 ">
+                <i class="fa fa-usd">65</i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn">Update Cart</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 ">
+                <div class="col-12">
+                    <p >COUPON</p>
+                </div>
+                <div class="col-12">
+                    <p style="color: rgb(139, 133, 133); font-size: 12px">Enter your coupon code if you have one.</p>
+                </div>
+                <div class="col-12">
+                    <input type="text" placeholder="coupon code" style="width: 100%; margin-left: 10px">
+                </div>
+                <div class="col-12">
+                    <button type="button" class="btn" style="margin-left: 10px;">APPLY COUPON</button>
+                </div>
+            </div>
+
+            <div class="col-6 ">
+                <div class="col-12" >
+                    <p >Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="col-12">
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="col-12">
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

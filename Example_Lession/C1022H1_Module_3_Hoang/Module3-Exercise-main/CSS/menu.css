@@ -1,0 +1,199 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(https://tourcanada.vn/images/diadiem/Thac_Niagra.jpg);
+        background-size: cover;
+        background-position-y: -220px;
+    }
+
+
+    #header {
+        background-color: rgb(187, 184, 184);
+        height: 50px;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    nav {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    #main-menu {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 100px;
+    }
+
+    #main-menu li {
+        position: relative;
+    }
+
+    #main-menu li a {
+        color: white;
+        display: flex;
+        padding: 15px 15px;
+        text-decoration: none;
+    }
+
+    #main-menu ul.sub-menu {
+        position: absolute;
+        display: none;
+        list-style-type: none;
+        background-color: rgb(187, 184, 184);
+        margin-top: 1px;
+        width: 200px;
+        border: 1px solid rgba(255, 255, 255, 0.301);
+    }
+
+
+    #main-menu li:hover .sub-menu {
+        display: block;
+    }
+
+    #main-menu ul.sub-menu a {
+        padding: 10px;
+        border-bottom: 1px solid white;
+        left 0;
+    }
+
+    #main-menu ul.sub-menu ul.sub-menu {
+        left: 200px;
+        top: -3px;
+        display: none;
+    }
+
+    #main-menu ul.sub-menu li:hover ul.sub-menu {
+        display: block;
+    }
+
+    #main-menu ul.sub-menu li:last-child a {
+        border: none;
+    }
+
+    #main-menu ul.sub-menu li:first-child a {
+        border-top: 1px solid white;
+    }
+
+    #logo>img {
+        width: 155px;
+        padding-top: 9px;
+        margin-left: 10px;
+        height: 30px;
+    }
+
+    li>a:hover {
+        background-color: rgb(155, 146, 146);
+    }
+
+    #main-menu>li.has-child>a::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f107";
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 16px;
+        color: #898282;
+    }
+
+    #main-menu>li.has-child>a::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f107";
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 16px;
+        color: #898282;
+    }
+
+    #main-menu>li.has-child:last-child>a::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 16px;
+        color: #898282;
+    }
+
+ 
+    .btn {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px;
+        margin-top: -10px;
+    }
+
+    #content {
+        padding: 10px 0px;
+    }
+
+    #main {
+        background: rgb(32, 255, 12);
+        width: 79%;
+        height: 550px;
+        float: left;
+        margin-right: 1%;
+        overflow: auto;
+
+    }
+
+    #extra {
+        background: rgb(124 121 121);
+        width: 20%;
+        height: 550px;
+        float: left;
+        margin-bottom: 10px;
+
+    }
+
+    .extra1 {
+        padding: 10px;
+
+    }
+
+    .extra2 {
+        font-size: 25px;
+        width: 80%;
+        background-color: rgb(187, 184, 184);
+        padding: 10px;
+        height: 90px;
+        margin-left: 15px;
+        text-align: center;
+    }
+
+    .value {
+        margin-top: 11px;
+    }
+
+    .be-datatable-header{
+        display: flex;
+    justify-content: space-between;
+    }
+
+    tr>th{
+        margin-left: 1px;
+        padding-right: 43px;
+    }
+
+    table{
+        padding-top: 10px;
+    }
+
+    th img{
+        width: 50px;
+        height: 50px;
+    }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #menu ul {
+        width: 250px;
+        padding: 0;
+        list-style-type: none;
+        text-align: left;
+
+    }
+
+    #menu li {
+        width: auto;
+        line-height: 40px;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 0 1em;
+    }
+
+    #menu li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+    }
+
+    #menu li:hover {
+        background: #CDE2CD;
+    }
+
+    #menu ul li {
+        /* position: relative; */
+    }
+
+    #menu .sub-menu {
+        /* position: absolute;
+        left: 100%; */
+        top: 0;
+        display: none;
+    }
+
+    #menu li:active .sub-menu {
+        display: block;
+    }
+</style>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chu</a></li>
+            <li><a href="#">Tin tuc</a>
+                <ul class="sub-menu">
+                    <li><a href="#">WordPress</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Hosting</a></li>
+                </ul>
+            </li>
+            <li><a href="#">San Pham</a></li>
+            <li><a href="#">Lien He</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

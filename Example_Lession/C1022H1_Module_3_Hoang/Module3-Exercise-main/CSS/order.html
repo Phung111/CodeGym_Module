@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Case Study - Quản Lí Sản Phẩm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css  ">
+
+    <style>
+        #main {
+            width: auto;
+            height: auto;
+            margin-left: 1%;
+        }
+
+        img {
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <div id="main">
+                <p>Danh Sách Sản Phẩm</p>
+                <table border="1">
+                    <tr>
+                        <th class="text-center">Id</th>
+                        <th class="text-center">Sản phẩm</th>
+                        <th class="text-center">Giá (VNĐ)</th>
+                        <th class="text-center" >Số lượng</th>
+                        <th class="text-center">Thành tiền (VNĐ)</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th><img src="https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/325815861.jpeg"
+                                alt="" style="float: left;">
+                            <p>iphone 11</p>
+                        </th>
+                        <th>12000</th>
+                        <th>
+                            <div class="buttons_added">
+                                <input class="minus is-form" type="button" value="-">
+                                <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="">
+                                <input class="plus is-form" type="button" value="+">
+                              </div>
+                        </th>
+                        <th>12000</th>
+                        <th><button>remove</button></th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th><img src="https://cdn1.viettelstore.vn/images/Product/ProductImage/medium/325815861.jpeg"
+                                alt="" style="float: left;">
+                            <P>iphone 12</P>
+                        </th>
+                        <th>14000</th>
+                        <th>
+                                <div class="buttons_added">
+                                    <input class="minus is  -form" type="button" value="-">
+                                    <input aria-label="quantity" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="">
+                                    <input class="plus is-form" type="button" value="+">
+                                  </div>
+                        </th>
+                        <th>28000</th>
+                        <th><button>remove</button></th>
+                    </tr>
+                    <tr>
+                        <th><button>Xoa Tat Ca</button></th>
+                        <th><button>Tiep Tuc Mua Sam</button></th>
+                        <th colspan="3" style="text-align: end; padding: 10px;">Tổng Tiền: 40000</th>
+                        <th><button>Thanh Toán</button></th>
+                    </tr>
+                </table>
+            </div>
+            <div id="extra">
+                <p>Thông Tin Khách Hàng</p>
+                <table border="1">
+                    <tr>
+                        <td class="text-center">Họ Và Tên</td>
+                        <td> <input type="text" name="" id="" value="Trần Nhật Hoàng"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Email</td>
+                        <td> <input type="email" name="" id="" value="nhathoang37@gmail.com"></td>
+                    </tr>
+                    <tr>
+
+                        <td class="text-center">Số Điện Thoại</td>
+                        <td> <input type="number" name="" id="" value="0999222888"></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center" >Địa Chỉ</td>
+                        <td> <input type="text" name="" id="" value="Thua Thien Hue"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><a><button>Đặt Hàng</button></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sub-menu').parent('li').addClass('has-child');
+        })
+    </script>
+</body>
+
+
+</html>

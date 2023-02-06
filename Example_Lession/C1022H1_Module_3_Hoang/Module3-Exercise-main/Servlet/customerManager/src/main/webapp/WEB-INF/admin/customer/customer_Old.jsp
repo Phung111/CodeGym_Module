@@ -1,0 +1,112 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Admin
+  Date: 12/12/2022
+  Time: 8:36 AM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<html>
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.15/dist/sweetalert2.all.min.js"></script>
+
+    <style>
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        table{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Customer manager</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Address</th>
+            <th scope="col">Country</th>
+            <th scope="col">Picture</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <c:forEach items="${requestScope.customers}" var="customer">
+            <tr>
+                <th scope="row">${customer.getId()}</th>
+                <td>${customer.getName()}</td>
+                <td>${customer.getAddress()}</td>
+                <c:forEach items="${applicationScope.countries}" var="country">
+                    <c:if test="${country.getId() == customer.getIdCountry()}">
+                        <td>${country.getName()}</td>
+                    </c:if>
+                </c:forEach>
+                <td><img src="${customer.getPicture()}"> </td>
+                    <%--                <td><a href="/customers?action=create"><i class="fa fa-add"></i></a>--%>
+                    <%--                    <a href="/customers?action=edit&id=${customer.getId()}"><i class="fa fa-edit"></i> </a>--%>
+                    <%--                    <a onclick="if (!confirm('Are you sure?')) {return false}" href="/customers?action=remove&id=${customer.getId()}" id="${customer.getId()}"><i class="fa fa-remove"></i></a>--%>
+                <td> <a href="/customers?action=create"><i class="fas fa-rss"></i></a>
+                    <a href="/customers?action=edit&id=${customer.getId()}"><i class="fa fa-edit"></i> </a>
+                    <i class="fa fa-remove" onclick="myFunction(this)"  id="${customer.getId()}" ></i>
+
+                        <%--                    <c:if test="${onclick==true}">--%>
+                        <%--                        <a  href="/customers?action=remove&id=${customer.getId()}"></a>--%>
+                        <%--                        <div class="alert alert-success">--%>
+                        <%--                            <h3>${requestScope.message}</h3>--%>
+                        <%--                        </div>--%>
+                        <%--                    </c:if>--%>
+                        <%--                </td>--%>
+                </td>
+            </tr>
+        </c:forEach>
+        </tbody>
+    </table>
+    <script>
+        function myFunction(e) {
+            let id = e.id;
+            let url = "http://localhost:8080/customers?action=remove&id=" + id;
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                    window.location.replace(url);
+                }
+            })
+        }
+
+
+    </script>
+    <%--    <script>--%>
+    <%--        function myFunction() {--%>
+    <%--            let text = "Are you sure?";--%>
+    <%--            if (confirm(text) == true) {--%>
+    <%--                alert("you delete success");--%>
+    <%--            } else {--%>
+    <%--                alert("You canceled!");--%>
+    <%--            }--%>
+    <%--        }--%>
+    <%--    </script>--%>
+</div>
+</body>
+</html>

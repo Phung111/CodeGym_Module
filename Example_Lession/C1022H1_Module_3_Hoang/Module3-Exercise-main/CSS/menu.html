@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Case Study - Quản Lí Sản Phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css  ">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo"><img src="https://cdn.codegym.vn/wp-content/uploads/2021/08/CodeGym-Logo.webp"
+                        alt=""></a>
+                <ul id="main-menu">
+                    <li><a href="/trangchu">Trang Chủ</a></li>
+                    <li><a href="">Sản Phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Sản Phẩm Mới</a>
+                            </li>
+                            <li><a href="">Sản Phẩm Cũ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="">Giới Thiệu</a></li>
+                    <li>
+                        <div class="btn">
+                            <button>Đăng Nhập</button>
+                            <button>Đăng Ký</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="search">
+                            <form action="" style="padding-top: 5px;">
+                                <div>
+                                    <input type="search" style="padding: 10px;" placeholder="Search...">
+                                    <button type="submit" style=""><i
+                                            class="fa-solid fa-magnifying-glass"></i></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cart">
+                            <a href=""><i class="fa-solid fa-cart-shopping" style="    color: red;
+                            font-size: 30px;
+                            margin-top: -5px;"></i></a>
+                        </div>
+                    </li>
+                </ul>
+                </li>
+
+
+            </nav>
+        </div>
+        <div id="content">
+            <div id="main">
+                <div>
+                    <div>
+                        <div id="background">
+                            <div id="background-top">
+                                <img src="https://dulichvietnam.com.vn/kinh-nghiem/wp-content/uploads/2018/07/du-lich-canada-mua-he.jpeg"
+                                    alt="picture" style="width: 100%; height: 175px;">
+                            </div>
+                            <div id="background-bottom" style="position: relative;">
+                                <div id="background-bottom-avatar"><img
+                                        src="https://luv.vn/wp-content/uploads/2021/02/Hinh-anh-hot-girl-Han-Quoc-chat-nhat-luv-13.jpg"
+                                        alt="avatar"
+                                        style="margin-top: -48px; height: 100px; width: 100px; border-radius: 79px; border: 3px solid #fff;     position: absolute;">
+                                </div>
+                                <div id="background-bottom-info" style="padding: 10px 0px 0px 114px;font-size: 30px;">
+                                    Nhat Hoang</div>
+                            </div>
+                        </div>
+                        <div id="user-info-list">
+                            <table style="padding: 30px 0px 0px 300px;">
+                                <tr>
+                                    <td style="padding-right: 60px; padding-bottom: 10px;">Họ Và Tên: </td>
+                                    <td>Trần Nhật Hoàng</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 60px; padding-bottom: 10px;">Ngày Sinh: </td>
+                                    <td>1994-21-21</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 60px; padding-bottom: 10px;">Số Điện Thoại: </td>
+                                    <td>0999111222</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 60px; padding-bottom: 10px;">Email: </td>
+                                    <td>hoang@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 60px; padding-bottom: 10px;">Địa Chỉ: </td>
+                                    <td>Thừa Thiên Huế</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 60px; padding-bottom: 10px;">Quyền Hạn: </td>
+                                    <td>Admin</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 60px; padding-bottom: 10px;">Ngày Tạo: </td>
+                                    <td>2022-12-27 00:00:00</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="extra">
+                <div class="extra1">
+                    <div class="extra2">
+                        <div class="tittle">Tổng Nhân Viên</div>
+                        <div class="value">15</div>
+                    </div>
+                </div>
+                <div class="extra1">
+                    <div class="extra2">
+                        <div class="tittle">Tổng Đơn Hàng</div>
+                        <div class="value">15</div>
+                    </div>
+                </div>
+                <div class="extra1">
+                    <div class="extra2">
+                        <div class="tittle">Số Sản Phẩm</div>
+                        <div class="value">15</div>
+                    </div>
+                </div>
+                <div class="extra1">
+                    <div class="extra2">
+                        <div class="tittle">Tổng Khách Hàng</div>
+                        <div class="value">15</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sub-menu').parent('li').addClass('has-child');
+        })
+    </script>
+</body>
+
+
+</html>

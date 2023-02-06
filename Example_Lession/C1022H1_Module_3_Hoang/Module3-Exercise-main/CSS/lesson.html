@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* đọc từ phải qua trái */
+         /* chọn nhiều selector, nối nhau bởi dấu phẩy */
+        div, button {
+        }
+
+        /* lấy hết tất cả thẻ p nằm bên trong thẻ div, nối nhau bởi khoảng trắng */
+        div p{
+        }
+
+        /* lấy những thẻ p là con trực tiếp bên trong thẻ div */
+        div > p {
+        }
+
+        /* lấy 1 thằng ae gần nhất ngay sau nó */
+        div + p {
+        }
+        
+        /* lấy tất cả ae ngay sau nó */
+        div ~ p {
+            color: blue;
+
+        }
+        /* lấy tất cả các thuộc tính class có tên là check */
+        .check {
+        }
+
+
+        /* lấy tất cả các thuộc tính class có tên l à check nằm trong thẻ h1*/
+        h1.check {
+            color: red;
+        }
+
+        div ~ .check {
+            color: yellow;
+        }
+
+        h1 {
+
+            background-color: red;
+            width: 100px;
+             padding: 50px; /* xung quanh văn bản */
+             /* border-style: solid;    border */
+             /* border: width style color (viết ngắn lại) */
+             /* border không nhận giá trị âm */
+             border-style: solid;
+             border-color: yellow;
+             border-top-color: green;
+             border-left-color: blue;
+             border-right-color: black;
+             border-width: 20px;
+             border-radius: 20px 0px; /*  làm tròn 4 góc */
+             box-shadow: 10px 10px 20px 10px  red; /*  làm bóng mờ */
+             /* outline: 10px darkblue solid; giống border */
+            margin: 0 auto; /* margin có thể nhận giá trị âm */
+
+        }
+
+        .checkmargin{
+
+            background-color: red;
+            border: 5px solid black;
+            width : 400px;
+            margin: 50px auto;
+            padding: 0px 10px;
+            text-align: center;
+        }
+
+        .flow {
+            width:400px;
+            height: 500px;
+            background-color: aliceblue;
+            overflow: auto; /* chỉ làm việc với các thành phần HTML
+            dạng block và có chiều cao xác định */
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="all">
+        <h1>tieu de</h1>
+        <h2 class="checkmargin">noi dung van ban</h2>
+        <div>
+            <div>test 2</div>
+            <p>test 3</p>
+            <p class="check">test 5</p>
+        </div>
+        <p >test 4</p>
+        <p>test 6</p>
+        <ul>
+            <li>AC</li>
+            <li>
+                <p class="check">def</p>
+            </li>
+        </ul>
+   </div>
+   <div>
+    <p class="flow">Two buildings caught fire Monday in the self-proclaimed Donetsk People's Republic (DPR) after strikes by Ukrainian forces, according to Russian state media.
+
+        The DPR's mission at the Russian-backed Joint Center for Control and Coordination said Ukrainian forces shelled the Voroshilovsky district of Donetsk with Grad missiles on Monday morning, Russian state news agency TASS reported.
+        
+        "Shelling by Ukrainian armed formations has been detected at 03:49 (a.m. local time) from the settlement of Tonenkoye toward the city of Donetsk (Voroshilovsky District), with 10 Grad rockets fired," the mission said on Telegram, according to TASS.
+        State news agency RIA Novosti said the two buildings that caught fire were residential, with one also housing a funeral home.
+        
+        Efforts to put out the fires have been complicated by water supply being turned off in the area, Russian media reported.
+        
+        Information on injuries and casualties is being clarified and emergency responders are at the scene, according to Russian media.
+        
+        The Ukrainian military has not yet confirmed or commented on the attack. 
+        
+        Donetsk, in eastern Ukraine, has been held by Russian-backed separatists since 2014.</p>
+   </div>
+   <button>click</button>
+</body>
+</html>
