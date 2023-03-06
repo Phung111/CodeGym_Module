@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Greeting</title>
+</head>
+<body>
+<form id="myform" action="spices" method="post">
+
+  <h1>Sandwich Condiments</h1>
+  <table>
+    <tr>
+      <td><input type="checkbox" id = "idgood" name="lecttuce"></td>
+      <td>Lettuce</td>
+      <td><input type="checkbox" id = "totamto" name="totamto"></td>
+      <td>Totamto</td>
+      <td><input type="checkbox" id = "mustard" name="mustard"></td>
+      <td>Mustard</td>
+      <td><input type="checkbox" id = "sprouts" name="sprouts"></td>
+      <td>Sprouts</td>
+      <hr>
+    </tr>
+    <tr>
+      <td><button type="submit">Save</button></td>
+    </tr>
+  </table>
+</form>
+<hr>
+<h2 th:text="${title}""></h2>
+<h2>A sandwich with</h2>
+<div th:each="spice:${spices}">
+  <tr th:text="${spice}"></tr>
+</div>
+
+
+
+</body>
+</html>
